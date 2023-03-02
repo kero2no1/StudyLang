@@ -23,15 +23,14 @@ C++は文法の学習をした程度。使ったことはない。
  ジョゼフ・オニール著/株式会社トップスタジオ訳
 
 Javaでコーディング後、<br>
-C++やPythonだとどうなるか？を調べながら実践していく方針。
+C++やPythonだとどうなるか？を調べながら実践していく。
 
 
 ## 環境
-統合開発環境：Eclipse
+統合開発環境：Eclipse v2022-12(4.26.0)
 
-Java	:<br>
-C++		:<br>
-Python	:
+Java	:Adoptium OpenJDK v17.0.6<br>
+C++		:MinGW 64bit v12.2.0<br>
+Python	:Python v3.11.2
 
-※あとで書く
 
