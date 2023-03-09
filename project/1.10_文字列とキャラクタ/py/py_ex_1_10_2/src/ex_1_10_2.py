@@ -10,6 +10,7 @@ def main():
     myName:str = s1 + " " + s2
     
     print( myName )
+    print("{} {}".format(s1,s2))
 
 if __name__ == '__main__':
     main()
