@@ -9,5 +9,11 @@ def main():
     arrData = [ 1, "2", 3.0 ]
 
     print( arrData )
+    print( len(arrData) )
+    
+    # 配列は初期化される
+    arrData = []
+    print( len(arrData) )
+    
 if __name__ == '__main__':
     main()
