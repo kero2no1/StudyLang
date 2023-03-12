@@ -15,5 +15,16 @@ def main():
     arrData = []
     print( len(arrData) )
     
-if __name__ == '__main__':
+    # リスト関数の引数に配列を指定
+    # 引数はiterable(反復可能オブジェクト)ならOK
+    arrData = list( [1.0, 2, "3"] )
+    print( arrData )
+    
+    arrData = list( "Python" )
+    print( arrData )
+    
+    arrData = list( range(3) )
+    print( arrData )
+    
+if __name__ == '__main__': 
     main()
