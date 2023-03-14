@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : cpp_ex_1_10_2.cpp
+// Name        : cpp_ex_1_11_2.cpp
 // Author      : keroichi.T
 // Version     :
 // Copyright   : Your copyright notice
@@ -10,20 +10,6 @@
 using namespace std;
 
 int main() {
-	// 文字列結合するときはstringクラスがよい
-	std::string myName, s1, s2;
-
-	s1 = "Keroichi";
-	s2 = "T";
-	myName = s1 + " " + s2;
-
-	cout << myName << endl;
-
-	cout << s1
-		 << " "
-		 << s2
-		 << endl;
-
-
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
 	return 0;
 }

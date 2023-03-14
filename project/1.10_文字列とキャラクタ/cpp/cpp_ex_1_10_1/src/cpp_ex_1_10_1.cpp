@@ -16,7 +16,12 @@ int main() {
 	// C++ライブラリはstringクラスが用意されている
 	string s = "\"Romeo, where art thou?\"";
 
-	cout << str << endl;
+	// 文字列リテラルは、「const char*」型なので書換え不可
+	// 下記のようにすると、コンパイルエラーを吐く
+//	str[2] = "s";
+//	s[2] = "s";
+
+	cout << str << "\n";
 	cout << s << endl;
 	return 0;
 }
