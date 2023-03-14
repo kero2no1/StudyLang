@@ -10,6 +10,13 @@
 using namespace std;
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	double distance = 3'000;
+	double speed = 75;
+
+	cout << "NewYorkからLosAngelesまで "
+		 << distance / speed
+		 << " 時間です。"
+		 << endl; // prints !!!Hello World!!!
+
 	return 0;
 }
