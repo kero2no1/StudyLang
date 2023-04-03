@@ -24,10 +24,22 @@ int main() {
 	// 範囲for文という仕組みがある
 	for( auto &array: arrays ) cout << array << endl;
 
-	int *lists = new int[10];
-	for( auto &list: lists ) {
-		list = 10;
+	// ↓これは範囲for文は使えない模様。もうちょっと調べる必要あり。
+//	int *lists = new int[10];
+//	int *lists = arrays;
+//	for( auto &list: lists ) list = 10;
+
+	for( int i = 1, j = 0; i < 100; i++ ) {
+		j++;
+		j %= 5;
+		if( j != 0 ) {
+			cout << i << "\t";
+		}
+		else {
+			cout << i << endl;
+		}
 	}
+
 
 
 	return 0;
