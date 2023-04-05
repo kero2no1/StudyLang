@@ -6,7 +6,7 @@ class Person {
 	float income;
 }
 
-public class java_ex5_02_1 {
+public class Ex5_02_1 {
 
 	public static void main(String[] args) {
 
