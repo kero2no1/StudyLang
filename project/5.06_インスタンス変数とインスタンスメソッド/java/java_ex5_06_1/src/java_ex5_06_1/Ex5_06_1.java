@@ -20,9 +20,9 @@ class Sphere {
 	
 	// インスタンスメソッド
 	void move( double cx, double cy, double cz ) {
-		this.cx = cx;
-		this.cy = cy;
-		this.cz = cz;
+		this.cx += cx;
+		this.cy += cy;
+		this.cz += cz;
 	}
 	
 	void scale( double radius ) {
