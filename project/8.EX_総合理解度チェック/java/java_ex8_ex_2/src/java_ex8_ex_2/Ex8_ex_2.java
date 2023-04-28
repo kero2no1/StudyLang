@@ -4,24 +4,36 @@ public class Ex8_ex_2 {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		int a = getNumSuperClass( new Exception().getClass().getName() );
-//		int b = getNumSuperClass( 10.getClass() );
+		try {
+			
+//			String str = "abc";
+//			String str = "java.lang.ClassName";
+			String str = new Exception().getClass().getName();
+			int count = getNumSuperClass( str );
+			
+			System.out.println( "スーパークラスの数：" + count );
+		}
+		catch( ClassNotFoundException e ) {
+			System.out.println( "クラスが見つかりませんでした！" );
+		}
+		catch( Exception e ) {
+			System.out.println( "入力値が異常です。" );
+		}
 	}
 	
 	
-	public static int getNumSuperClass( String fullClass ) {
+	public static int getNumSuperClass( String fullQCN ) 
+									throws ClassNotFoundException {
+		Class<?> cls = Class.forName( fullQCN );
+		int count = 0;
 		
-//		Class superClass = obj.getClass().getSuperclass();
-
-		try {
-			System.out.println( Class.forName( fullClass ).getSuperclass() );
+		while( cls.getSuperclass() != null ) {
+			cls = cls.getSuperclass();
+			System.out.println( cls );
+			count++;
 		}
-		catch ( ClassNotFoundException e ) {
-			
-		}
 		
-		
-		return 0;
+		return count;
 	}
 
 }
